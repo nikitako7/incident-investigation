@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/6b45d3d7aa.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <title>Інциденти</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="m-auto">
+          <h3 class="text-center mb-3">
+            <i class="fas fa-exclamation-circle"></i>Можливі Інциденти
+          </h3>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control form-control-lg"
+              id="search"
+              placeholder="Введіть інцидент"
+            />
+          </div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>№</th>
+                <th>Назва активу</th>
+                <th>Власник активу</th>
+                <th>Місце розташування</th>
+                <th>Категорія активу</th>
+                <th>Загроза</th>
+                <th>Джерело загроз</th>
+                <th>Механізм реалізації нападу</th>
+              </tr>
+            </thead>
+            <tbody id="match-list"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
