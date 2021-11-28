@@ -1,7 +1,7 @@
 const search = document.getElementById("search");
 const matchList = document.getElementById("match-list");
 
-const searchStates = async (searchText) => {
+const searchIncidents = async (searchText) => {
   const res = await fetch("data/data.json");
   const incidents = await res.json();
 
@@ -56,6 +56,6 @@ const outputHTML = (matches) => {
     matchList.innerHTML = html;
   }
 };
-searchStates("");
+searchIncidents("");
 
-search.addEventListener("input", () => searchStates(search.value));
+search.addEventListener("input", () => searchIncidents(search.value));
